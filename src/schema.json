@@ -1,0 +1,45 @@
+{
+  "title": "Schema for User Profile Information",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "The first name of the user."
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The last name of the user."
+    },
+    "age": {
+      "type": "integer",
+      "description": "The age of the user."
+    },
+    "email": {
+      "type": "string",
+      "description": "The email address of the user."
+    },
+    "position": {
+      "type": "string",
+      "description": "The job position of the user."
+    },
+    "address": {
+      "type": "object",
+      "description": "The address of the user.",
+      "properties": {
+        "street": {
+          "type": "string",
+          "description": "The street address."
+        },
+        "city": {
+          "type": "string",
+          "description": "The city."
+        },
+        "country": {
+          "type": "string",
+          "description": "The country."
+        }
+      }
+    }
+  },
+  "required": ["firstName", "lastName", "age", "email", "position", "address"]
+}

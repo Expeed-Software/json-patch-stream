@@ -1,0 +1,25 @@
+{
+  "name": "json-patch-stream",
+  "version": "1.0.0",
+  "description": "LLM-powered agent that streams JSON Patches (RFC 6902) to incrementally construct a JSON based on a given schema.",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc"
+  },
+  "author": "hkurma",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^25.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.23",
+    "ai": "^6.0.62",
+    "dotenv": "^17.2.3"
+  }
+}
